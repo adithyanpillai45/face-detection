@@ -9,7 +9,10 @@ from typing import List, Tuple, Optional, Union, Dict, Any, Callable
 import cv2
 import numpy as np
 from PIL import Image
-from .detector import DetectionResult, FaceBox
+try:
+    from .detector import DetectionResult, FaceBox
+except (ImportError, ValueError):
+    from detector import DetectionResult, FaceBox
 
 
 def load_image(source: Union[str, bytes, bytearray, Image.Image, np.ndarray]) -> np.ndarray:

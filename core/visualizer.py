@@ -6,7 +6,10 @@ facial landmarks, and privacy filters (blur/pixelate).
 from typing import Tuple, Optional
 import cv2
 import numpy as np
-from .detector import DetectionResult, FaceBox
+try:
+    from .detector import DetectionResult, FaceBox
+except (ImportError, ValueError):
+    from detector import DetectionResult, FaceBox
 
 
 THEME_COLORS = {
