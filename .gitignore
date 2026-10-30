@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Output test files
+output_annotated.jpg
+output_annotated_faces/
+detection_output.json
+temp_input_video.mp4
+temp_output_annotated.mp4
+*.mp4
+*.avi
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Streamlit
+.streamlit/
+
+# IDE
+.vscode/
+.idea/
+*.swp
